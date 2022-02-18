@@ -1067,7 +1067,6 @@ pragma solidity ^0.8.2;
 
 
 
-/// @custom:security-contact staff@midanft.com
 contract MIDAToken is ERC20, Pausable, AccessControl {
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
