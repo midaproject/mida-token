@@ -3,9 +3,9 @@ pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
-import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 
-contract MIDAToken is ERC20, Pausable, AccessControl {
+contract MIDAToken is ERC20, Pausable, AccessControlEnumerable {
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
     constructor() ERC20("MIDA Token", "MIDA") {
